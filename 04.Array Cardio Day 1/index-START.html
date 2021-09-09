@@ -81,7 +81,7 @@
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
     const eight = data.reduce(function(sum,item) {
       if(!sum[item])  sum[item] = 0
-      if(sum.hasOwnProperty(item)) sum[item]++
+      sum[item]++
       // if(sum.hasOwnProperty(item)) sum[item]++
       // else sum[item] = 1                    //采用这个逻辑的话初始化应该是1而不是0
       return sum             //忘记return
